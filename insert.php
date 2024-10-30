@@ -17,7 +17,7 @@ $edad = $_POST['edad'];
 $sql = "INSERT INTO persona (nombre,edad) VALUES ('$nombre', $edad)";
 
 if ($conn->query($sql) === TRUE) {
-	echo "Nuevo registro insertado correctamente:";
+	echo "Nuevo registro insertado correctamente";
 } else  {
 	echo "Error: " . $sql . "<br>" . $conn->error;
 }
